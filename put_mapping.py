@@ -1,8 +1,7 @@
 # coding=utf-8
 """Put the mapping for the Esimple application"""
-from pyes import ES
-
 from settings import INDEX_NAME
+from settings import es_connection
 
 
 ELASTICSEARCH_INDEX_SETTINGS = {
