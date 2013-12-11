@@ -27,19 +27,19 @@ DOCUMENT_MAPPINGS = {
         'properties': {
             'name': {
                 'type': 'string',
+                'store': 'yes',
+                'index': 'analyzed'
             },
             'age': {
-                'type': 'long'
-            },
-            'is_favourite': {
-                'type': 'boolean'
+                'type': 'long',
+                'store': 'yes',
+                'index': 'analyzed'
             },
             'groups': {
                 'type': 'string',
-                'index_name': 'group'
-            },
-            'coords': {
-                'type': 'geo_point'
+                'index_name': 'group',
+                'store': 'yes',
+                'index': 'analyzed'
             }
         }
     },

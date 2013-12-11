@@ -67,7 +67,6 @@ def put_data():
         # Generate a hash (we don't need ID, but why not?)
         serialized_data = json.dumps(data)
         doc_id = hash(serialized_data)
-        print '\tPutting: {}'.format(serialized_data)
 
         es_connection.index(data, INDEX_NAME, 'contacts', id=doc_id)
 
