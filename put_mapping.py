@@ -48,8 +48,6 @@ DOCUMENT_MAPPINGS = {
 
 def put_mapping():
     """Put ES mapping for Esimple"""
-    es_connection = ES()  # Defaults to localhost:9200
-
     if not es_connection.indices.exists_index(INDEX_NAME):
         print 'Creating index...'
         # Create a new index with the specified index settings
